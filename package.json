@@ -22,7 +22,8 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "deploy": "npm run build && git add . && git commit -m 'Build for deployment' && git push"
   },
   "dependencies": {
     "@emotion/react": "^11.14.0",
