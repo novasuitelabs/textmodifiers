@@ -4,9 +4,9 @@
   "version": "1.0.0",
   "description": "A modern web-based text transformation tool with Material UI 3",
   "keywords": ["text", "transformer", "modifier", "react", "typescript", "material-ui"],
-  "author": "Your Name",
+  "author": "xxavvTechnologies",
   "license": "MIT",
-  "homepage": "https://yourusername.github.io/textmodifiers",
+  "homepage": "https://novasuitelabs.github.io/textmodifiers",
   "type": "module",
   "scripts": {
     "dev": "vite",
