@@ -15,8 +15,7 @@
 [![GitHub License](https://img.shields.io/github/license/novasuitelabs/textmodifiers)](https://github.com/novasuitelabs/textmodifiers/blob/main/LICENSE)
 [![GitHub Last Commit](https://img.shields.io/github/last-commit/novasuitelabs/textmodifiers)](https://github.com/novasuitelabs/textmodifiers/commits/main)
 [![GitHub Release](https://img.shields.io/github/v/release/novasuitelabs/textmodifiers)](https://github.com/novasuitelabs/textmodifiers/releases)
-[![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/novasuitelabs/textmodifiers/deploy.yml?branch=main)](https://github.com/novasuitelabs/textmodifiers/actions)
-[![Website](https://img.shields.io/website?url=https://novasuitelabs.github.io/textmodifiers)](https://novasuitelabs.github.io/textmodifiers)
+[![GitHub Workflow Status](https://github.com/novasuitelabs/textmodifiers/actions/workflows/deploy.yml/badge.svg)](https://github.com/novasuitelabs/textmodifiers/actions/workflows/deploy.yml)
 
 A modern, web-based text transformation tool built with React, TypeScript, and Material UI 3. Transform your text with various formatting options, case changes, and text analysis features.
 
