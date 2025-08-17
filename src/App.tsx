@@ -30,6 +30,8 @@ import {
   DarkMode,
   LightMode
 } from '@mui/icons-material';
+import FloatingAITools from './components/FloatingAITools';
+import SampleTexts from './components/SampleTexts';
 
 // Text transformation functions
 const textTransformers = {
@@ -79,10 +81,24 @@ function App() {
     palette: {
       mode: isDarkMode ? 'dark' : 'light',
       primary: {
-        main: '#6750A4',
+        main: '#1976d2',
+        light: '#42a5f5',
+        dark: '#1565c0',
+        contrastText: '#ffffff',
       },
       secondary: {
-        main: '#625B71',
+        main: '#2196f3',
+        light: '#64b5f6',
+        dark: '#1976d2',
+        contrastText: '#ffffff',
+      },
+      background: {
+        default: isDarkMode ? '#0a1929' : '#f5f5f5',
+        paper: isDarkMode ? '#132f4c' : '#ffffff',
+      },
+      text: {
+        primary: isDarkMode ? '#ffffff' : '#1a2027',
+        secondary: isDarkMode ? '#b2bac2' : '#3e5060',
       },
     },
     typography: {
@@ -289,6 +305,9 @@ function App() {
         </Box>
 
         <Stack spacing={3}>
+          {/* Sample Texts Section */}
+          <SampleTexts onTextSelect={setInputText} />
+
           {/* Input Section */}
           <Paper sx={{ p: 3 }}>
             <Typography variant="h6" gutterBottom>
@@ -300,7 +319,7 @@ function App() {
               rows={6}
               value={inputText}
               onChange={(e) => setInputText(e.target.value)}
-              placeholder="Enter your text here..."
+              placeholder="Enter your text here or select a sample above..."
               variant="outlined"
               sx={{ mb: 2 }}
             />
@@ -331,7 +350,7 @@ function App() {
           {/* Transformation Buttons */}
           <Paper sx={{ p: 3 }}>
             <Typography variant="h6" gutterBottom>
-              Transformations
+              Basic Transformations
             </Typography>
             <Box sx={{ display: 'flex', flexWrap: 'wrap', gap: 1 }}>
               {transformationButtons.map(({ key, label }) => (
@@ -352,6 +371,9 @@ function App() {
             </Box>
           </Paper>
 
+          {/* Floating AI Tools */}
+          <FloatingAITools inputText={inputText} onOutputChange={setOutputText} />
+
           {/* Output Section */}
           <Paper sx={{ p: 3 }}>
             <Typography variant="h6" gutterBottom>
@@ -362,10 +384,22 @@ function App() {
               multiline
               rows={6}
               value={outputText}
-              InputProps={{ readOnly: true }}
+              InputProps={{ 
+                readOnly: true,
+                style: { 
+                  whiteSpace: 'pre-wrap',
+                  fontFamily: 'inherit'
+                }
+              }}
               placeholder="Transformed text will appear here..."
               variant="outlined"
-              sx={{ mb: 2 }}
+              sx={{ 
+                mb: 2,
+                '& .MuiInputBase-input': {
+                  whiteSpace: 'pre-wrap',
+                  lineHeight: 1.5
+                }
+              }}
             />
             <Stack direction="row" spacing={2} flexWrap="wrap" useFlexGap>
               <Button

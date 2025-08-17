@@ -2,8 +2,18 @@
   "name": "textmodifiers",
   "private": false,
   "version": "1.0.0",
-  "description": "A modern web-based text transformation tool with Material UI 3",
-  "keywords": ["text", "transformer", "modifier", "react", "typescript", "material-ui"],
+  "description": "A modern web-based text transformation tool with AI-powered features using GPT-4.1-nano and Material UI 3",
+  "keywords": [
+    "text",
+    "transformer",
+    "modifier",
+    "react",
+    "typescript",
+    "material-ui",
+    "ai",
+    "gpt",
+    "openai"
+  ],
   "author": "xxavvTechnologies",
   "license": "MIT",
   "homepage": "https://novasuitelabs.github.io/textmodifiers",
@@ -19,8 +29,12 @@
     "@emotion/styled": "^11.14.1",
     "@mui/icons-material": "^7.3.1",
     "@mui/material": "^7.3.1",
+    "openai": "^5.12.2",
     "react": "^19.1.1",
-    "react-dom": "^19.1.1"
+    "react-dom": "^19.1.1",
+    "@azure-rest/ai-inference": "latest",
+    "@azure/core-auth": "latest",
+    "@azure/core-sse": "latest"
   },
   "devDependencies": {
     "@eslint/js": "^9.33.0",

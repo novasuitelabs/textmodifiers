@@ -1,4 +1,7 @@
-# Text Modifier
+<div align="center">
+  <img src="public/icon.svg" alt="Text Modifier" width="128" height="128">
+  <h1>textmodifiers</h1>
+</div>
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![React](https://img.shields.io/badge/React-18.0.0-blue.svg)](https://reactjs.org/)
@@ -36,6 +39,20 @@ A modern, web-based text transformation tool built with React, TypeScript, and M
 - **Text Analysis**: Word count, character count, line count
 - **Fun Features**: Reverse text
 
+### AI-Powered Tools (NEW!)
+- **Floating AI Sidebar**: Access AI tools from anywhere with a beautiful floating interface
+- **Glowing Ring Animation**: Eye-catching animated button with smooth transitions
+- **Text Summarization**: Create concise summaries of your text
+- **Grammar Correction**: Fix grammar, spelling, and improve writing style
+- **Style Transfer**: Transform text to different writing styles (professional, casual, formal, etc.)
+- **Language Translation**: Translate text to multiple languages
+- **Text Analysis**: Get detailed insights about tone, style, and themes
+- **Content Expansion**: Add more detail and examples to your text
+- **Content Generation**: Create new content based on topics
+- **Custom AI Prompts**: Use your own custom prompts for AI processing
+- **Real-time Streaming**: Toggle streaming mode for word-by-word AI responses
+- **Powered by Azure OpenAI Service**: Leveraging GPT-4.1-nano for advanced text processing
+
 ### User Experience
 - 🎨 **Material UI 3** with expressive design
 - 🌙 **Auto dark mode** detection based on system preference
@@ -43,12 +60,14 @@ A modern, web-based text transformation tool built with React, TypeScript, and M
 - 📋 **Copy to clipboard** functionality
 - 💾 **File upload/download** support
 - 🔔 **Toast notifications** for user feedback
+- 📝 **Sample Texts** with 8 different categories for testing AI features
 
 ## 🚀 Getting Started
 
 ### Prerequisites
 - Node.js (version 16 or higher)
 - npm or yarn
+- GitHub Personal Access Token (for AI features) - supports both fine-grained and classic tokens
 
 ### Installation
 
@@ -63,12 +82,22 @@ cd textmodifiers
 npm install
 ```
 
-3. Start the development server:
+3. Set up environment variables:
+   - Create a `.env` file in the root directory
+   - Add your GitHub Personal Access Token:
+   ```
+   VITE_GITHUB_TOKEN=your_github_token_here
+   ```
+   - Get your token from: https://github.com/settings/tokens
+   - **Recommended**: Use fine-grained tokens for better security
+   - See [ENVIRONMENT_SETUP.md](ENVIRONMENT_SETUP.md) for detailed setup instructions
+
+4. Start the development server:
 ```bash
 npm run dev
 ```
 
-4. Open your browser and navigate to `http://localhost:5173`
+5. Open your browser and navigate to `http://localhost:3000`
 
 ## 🛠️ Available Scripts
 
@@ -97,10 +126,24 @@ npm run dev
 
 ## 🎯 Usage
 
-1. **Enter Text**: Type or paste your text in the input field
-2. **Upload File**: Click "Upload File" to load text from a file (.txt, .md, .json, .csv)
-3. **Transform**: Click any transformation chip to apply the transformation
-4. **Copy/Download**: Use the copy or download buttons to save your transformed text
+### Getting Started
+1. **Choose Sample Text**: Select from 8 different text categories (Business, Creative, Academic, Technical, etc.)
+2. **Randomize**: Use the shuffle button to get a random sample text
+3. **Enter Custom Text**: Type or paste your own text in the input field
+4. **Upload File**: Click "Upload File" to load text from a file (.txt, .md, .json, .csv)
+
+### Basic Text Transformations
+1. **Transform**: Click any transformation chip to apply the transformation
+2. **Copy/Download**: Use the copy or download buttons to save your transformed text
+
+### AI-Powered Tools
+1. **Floating AI Button**: Click the glowing AI button on the right side of the screen
+2. **Quick AI Actions**: Use the sidebar for common AI tasks like summarization and grammar correction
+3. **Advanced AI Tools**: Access more advanced features like style transfer, translation, and content generation
+4. **Expandable Interface**: Toggle between compact and expanded sidebar views
+5. **Custom Prompts**: Create your own AI prompts for specialized text processing
+6. **Real-time Processing**: Watch the AI process your text with loading indicators and error handling
+7. **Azure OpenAI Integration**: Powered by Microsoft's Azure OpenAI Service with GPT-4.1-nano
 
 ## 🔧 Customization
 

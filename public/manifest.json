@@ -1,0 +1,21 @@
+{
+  "name": "Text Modifier - AI-Powered Text Transformation Tool",
+  "short_name": "Text Modifier",
+  "description": "Transform your text with AI-powered tools. Summarize, correct grammar, change writing styles, translate languages, and more.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#1976d2",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["productivity", "utilities", "text"],
+  "lang": "en",
+  "dir": "ltr"
+}
